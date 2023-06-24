@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Calculater</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <form class="container">
+        <p class="heading">EMI Calculater</p>
+        <div class="input-container">
+            <label for="amount">Lone Amount<i class="fa fa-inr"></i></label>
+            
+            <input type="number" id="amount" required>
+        </div>
+        <div class="input-container loan-tenure-container">
+            <label for="loanTenure">Loan Tenure</label>
+            <input type="text" id="loanTenure" required>
+            <div class="radio-container">
+                <input type="radio" name="btn" id="year"><label for="year">Year</label>
+                <input type="radio" name="btn" id="month"><label for="month">Month</label>
+            </div>
+        </div>
+        <div class="submit-container">
+            <input type="submit" value="submit" id="calculate">
+        </div>
+        
+        <div class="output">
+            <p>Lone EMI                  <span id="emi"><i class="fa fa-inr"></i></span></p>
+            <p>Total Interest Payable    <span id="totalInterest"><i class="fa fa-inr"></i></span></p>
+            <p>Total Payment(Principal + Interest)<span id="totalPayment"><i class="fa fa-inr"></i></span></p>
+        </div>
+         
+    </form>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
